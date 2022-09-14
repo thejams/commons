@@ -1,0 +1,12 @@
+# coverage file
+coverage.txt
+coverage_tmp.txt
+
+# vs code
+.idea
+vscode/
+
+# golang project
+vendor/
+coverfile_out
+build/

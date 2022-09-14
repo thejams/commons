@@ -1,0 +1,5 @@
+# project pipeline
+
+include:
+  - project: "irecmd/templates/ci-templates"
+    file: ".golang-ci-template.yml"
