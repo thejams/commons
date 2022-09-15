@@ -2,4 +2,4 @@
 
 include:
   - project: "irecmd/templates/ci-templates"
-    file: ".golang-ci-template.yml"
+    file: ".golang-libraries-ci-template.yml"
