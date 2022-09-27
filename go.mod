@@ -1,3 +1,3 @@
-module gitlab.com/irecmd/codes/libraries/error-handler
+module github.com/thejams/error-handler
 
 go 1.18
