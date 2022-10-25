@@ -1,3 +1,3 @@
-module github.com/thejams/error-handler
+module github.com/thejams/commons
 
 go 1.18
