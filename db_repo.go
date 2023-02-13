@@ -9,7 +9,7 @@ type Repository interface {
 	Get(string) (interface{}, error)
 
 	// List gets multiple books
-	List(context.Context) ([]interface{}, error)
+	List(context.Context) (interface{}, error)
 
 	// Insert inserts to the DB returning error on conflicts
 	Insert(context.Context, []interface{}) error
