@@ -1,4 +1,4 @@
-package commons
+package errors
 
 import (
 	"encoding/json"
@@ -6,17 +6,17 @@ import (
 	"net/http"
 )
 
-//BadRequestError
+// BadRequestError
 type BadRequestError struct {
 	Message string
 }
 
-//NotFoundError
+// NotFoundError
 type NotFoundError struct {
 	Message string
 }
 
-//InternalError
+// InternalError
 type InternalError struct {
 	Message string
 }
@@ -33,13 +33,13 @@ func (e *InternalError) Error() string {
 	return fmt.Sprintf("InternalServerError: %v", e.Message)
 }
 
-//ErrorWrapper main struct for custom error return
+// ErrorWrapper main struct for custom error return
 type ErrorWrapper struct {
 	Code    int    `json:"code"`
 	Message string `json:"message"`
 }
 
-//DecodeError returns a specific type of error according to type
+// DecodeError returns a specific type of error according to type
 func DecodeError(err error) (status int, errBody ErrorWrapper) {
 	switch err.(type) {
 	case *BadRequestError:

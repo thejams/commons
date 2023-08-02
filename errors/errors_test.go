@@ -1,4 +1,4 @@
-package commons
+package errors
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package commons
+package db
 
 type IDB interface {
 	// Conn connects to a DB engine
