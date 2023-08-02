@@ -5,7 +5,7 @@ import dd_tracer "gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 type ddTracer struct{}
 
 func NewDDTracer(opts Options) Tracer {
-	return nil
+	return &ddTracer{}
 }
 
 func (ddT *ddTracer) Start(opts Options) {
