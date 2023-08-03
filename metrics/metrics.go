@@ -2,7 +2,12 @@ package metrics
 
 import "time"
 
-type Metrics interface {
+type Metrics struct {
+	Client   MetricsClient
+	IsActive bool
+}
+
+type MetricsClient interface {
 	// Gauge measures the value of a metric at a particular time.
 	Gauge(name string, value float64, tags []string, rate float64) error
 
